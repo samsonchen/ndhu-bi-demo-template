@@ -1,4 +1,6 @@
-# P1 資料清理（12 分鐘）
+# P1 ETL（12 分鐘）
+
+ETL 是 Extract（擷取）、Transform（轉換）、Load（載入）：從原始報表取出資料，轉成可以分析的格式，再存成後續要用的檔案。
 
 原始報表是給人看的，不是給程式用的：有合併儲存格、合計列、備註。這一段請 AI 把 **一份** 報表（114-1 在學人數）轉成整齊的 CSV，再用驗證腳本確認結果正確。
 
@@ -9,8 +11,8 @@
 ```mermaid
 flowchart LR
     raw["114-1 在學人數<br/>原始報表 .xls"]
-    etl["work/etl_enrollment.py<br/>AI 寫的清理程式"]
-    mine["work/enrollment_114-1.csv<br/>你清出來的資料"]
+    etl["work/etl_enrollment.py<br/>AI 寫的 ETL 程式"]
+    mine["work/enrollment_114-1.csv<br/>你 ETL 產出的資料"]
     val{"scripts/validate.py<br/>比對"}
     std[("data/*.csv<br/>標準資料・7 個學期")]
     allraw["全部原始報表<br/>7 學期 .xls / .pdf"]
@@ -18,7 +20,7 @@ flowchart LR
 
     raw --> etl --> mine --> val
     val -->|"對照"| std
-    allraw -.->|"講師用同樣方法<br/>事先清好"| std
+    allraw -.->|"講師用同樣方法<br/>事先做好 ETL"| std
     std -.-> p2
 
     classDef now fill:#fff3cd,stroke:#b8860b,stroke-width:2px,color:#333
@@ -57,7 +59,7 @@ uv run scripts/validate.py enrollment work/enrollment_114-1.csv
 ## 看結果
 
 - 看到 `🎉 全部通過` 就完成了。
-- 時間到還沒通過也沒關係，直接進 P2。P2 用的是 `data/` 裡 7 個學期的完整資料，那份資料就是用同樣的方法清出來的。
+- 時間到還沒通過也沒關係，直接進 P2。P2 用的是 `data/` 裡 7 個學期的完整資料，那份資料就是用同樣的 ETL 方法產出的。
 
 ---
 
