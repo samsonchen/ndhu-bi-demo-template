@@ -25,6 +25,7 @@ window.NDHU_DATA = {
 - enrollment、leave 都先依 fields 裡除了人數以外的欄位加總
 - 輸出成精簡 JSON（不換行、不縮排），UTF-8
 - 用 uv 的 inline script metadata 宣告需要的套件
+- 不要修改 data/ 裡的檔案
 - 完成後告訴我 enrollment 和 leave 各有幾列、檔案多大
 ```
 
