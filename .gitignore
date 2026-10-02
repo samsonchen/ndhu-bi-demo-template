@@ -141,3 +141,7 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# 講師專用（ETL 救援程式，不進 template）
+_instructor/
+.DS_Store
