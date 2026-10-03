@@ -13,7 +13,7 @@
 | [P1](prompts/P1-ETL.md) | 用 AI 做 ETL：把一份 Excel 報表轉成整齊的 CSV，並驗證 | 12 分 |
 | [P2](prompts/P2-做出BI網頁.md) | 請 AI 做出互動 BI 網頁 | 35 分 |
 | [P3](prompts/P3-發佈.md) | push 到 GitHub，開啟 GitHub Pages | 10 分 |
-| [作業](prompts/作業.md) | 沒做完的部分，以及延伸題 | — |
+| [作業](prompts/作業.md) | 完成課堂內容，以及用自己有興趣的數據做 BI 網頁 | — |
 
 每一段的 prompt 都可以直接複製貼到 Claude Code。
 

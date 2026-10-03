@@ -7,7 +7,7 @@
 
 用法：
   uv run scripts/validate.py enrollment work/enrollment_114-1.csv   # 課堂 P1：在學人數
-  uv run scripts/validate.py leave      work/leave_114-1.csv        # 作業：休學人數 PDF
+  uv run scripts/validate.py leave      work/leave_114-1.csv        # 延伸：休學人數 PDF
 """
 import re, sys
 from pathlib import Path

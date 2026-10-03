@@ -52,7 +52,7 @@ flowchart LR
 
 技術：
 - 資料用 P2-1 產生的 docs/data.js（程式在 work/build_data.py），直接雙擊 index.html 就要能開
-- 圖表用 ECharts，從這個網址載入：https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.1/echarts.min.js
+- 圖表用 ECharts，從這個網址載入：https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js
 - ECharts 載入失敗時（例如沒有網路），頁面顯示一行提示
 - 本機檔案只用相對路徑
 - 介面全部用繁體中文，手機上卡片改成一欄
