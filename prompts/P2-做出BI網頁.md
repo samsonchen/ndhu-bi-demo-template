@@ -88,6 +88,8 @@ flowchart LR
 完成後告訴我怎麼在電腦上打開它檢查。
 ```
 
+說明：上面 prompt 裡 ECharts 的載入網址與版號（5.5.0），是講師與 Claude Opus 討論後才定下的細節。自己寫 prompt 時不一定要寫到這麼細；如果圖表出不來，可以請 Claude 檢查 ECharts 的網址是否正確。
+
 ## 看結果
 
 用瀏覽器打開 `docs/index.html`（需要網路，圖表元件從網路載入）。試試看：
